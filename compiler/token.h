@@ -34,7 +34,7 @@ public:
 	Token() { }
 	~Token() { }
 
-	//DEFAULT PARAMETERS SHOULD BE CHANGED
+	//TODO Default parameters should be changed
 	Token(Types t, int line = 0, int col = 0, std::string orig = " ")
 	{
 		type = t;
@@ -46,26 +46,45 @@ public:
 		{
 		case Types::int_type:
 			value = std::stoi(orig);
+			break;
 
 		case Types::float_type:
 			value = std::stod(orig);
+			break;
 
 		case Types::string_type:
 		case Types::id_type:
+		case Types::char_type:
 			value = const_cast<char*> (orig.c_str());
+			break;
+
+		case Types::separator_type:
+			find_or_raise<Separators>(&value, &type, separators_list, orig);
+			break;
 
 		case Types::operator_type:
-			if (operators_list.count(orig))
-				value = operators_list.find(orig)->second;	//[orig] doesn't working and I don't know why
-			else
-			{
-				type = unknown_character;
-				value = "unknown";
-			}
+			find_or_raise<Operators>(&value, &type, operators_list, orig);
+			break;
 
 		case Types::end_of_file:
 			value = "EOF";
+			break;
+		}
+	}
+
+	//TODO Think about name
+	//TODO Need to check if operator == separator or conversely
+	template <typename T> void find_or_raise (Value *v, Types *t, std::map<std::string, T> list, std::string o)
+	{
+		if (list.count(o))
+			*v = list.find(o)->second;	//[o] doesn't working and I don't know why
+		else
+		{
+			*t = unknown_character;
+			*v = "unknown";
 		}
 	}
 };
+
+
 

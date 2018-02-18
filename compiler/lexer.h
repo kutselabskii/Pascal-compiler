@@ -29,4 +29,7 @@ private:
 	std::string current_;
 	Token last_;
 
+	//TODO Think about name
+	Token make_or_throw(Types);
+
 };

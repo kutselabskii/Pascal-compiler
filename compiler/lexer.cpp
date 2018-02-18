@@ -18,6 +18,8 @@ Lexer::~Lexer()
 
 Token Lexer::next()
 {
+	Token t;
+
 	char symbol;
 	current_.clear();
 
@@ -90,14 +92,21 @@ Token Lexer::next()
 
 		case read_id_end:
 			do_read = false;
-			return Token(Types::id_type, pos_line, pos_col, current_);
+			return Token(Types::id_type, pos_line, pos_col, current_);	//TODO check for keywords
+
+		case read_separator_end:
+			do_read = false;
+			return make_or_throw(Types::separator_type);
 
 		case read_operator_end:
-			Token t(Types::operator_type, pos_line, pos_col, current_);
-			if (t.type == Types::unknown_character)		//We thought that we read an operator, but it was something bad
-				throw LexerError("Unknown symbol while reading an operator", pos_line, pos_col);
+			do_read = false;
+			return make_or_throw(Types::operator_type);
 
-		//27 READ SEPARATOR END
+		case sharp_char_end:
+			do_read = false;
+			return Token(Types::char_type, pos_line, pos_col, current_);
+
+		//28 sharp_char_end check
 		}
 
 	}
@@ -106,3 +115,13 @@ Token Lexer::next()
 
 	return t;
 }
+
+Token Lexer::make_or_throw(Types type)
+{
+	Token t(type, pos_line, pos_col, current_);
+	if (t.type == Types::unknown_character)		//We thought that we read an operator, but it was something bad
+		throw LexerError("Unknown symbol while reading an operator", pos_line, pos_col);
+	return t;
+}
+
+

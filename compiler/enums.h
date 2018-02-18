@@ -58,6 +58,7 @@ enum Types
 	id_type,
 	operator_type,
 	separator_type,
+	char_type
 };
 
 enum Operators
@@ -109,15 +110,17 @@ enum Separators
 	parenthesis_close,
 	square_bracket_open,
 	square_bracket_close,
-	semicolon
+	semicolon,
+	colon
 };
 
 const std::map <std::string, Separators> separators_list = {
 	{"(", Separators::parenthesis_open}, {")", Separators::parenthesis_close}, {"[", Separators::square_bracket_open}, {"]", Separators::square_bracket_close},
-	{";", Separators::semicolon}
+	{";", Separators::semicolon}, {":", Separators::colon}
 };
 
 const std::map <Separators, std::string> separators_names = {
 	{Separators::parenthesis_open, "parenthesis_open" }, {Separators::parenthesis_close, "parenthesis_close" },
-	{Separators::square_bracket_open, "square_bracket_open" }, {Separators::square_bracket_close, "square_bracket_close" }, {Separators::semicolon, "semicolon" }
+	{Separators::square_bracket_open, "square_bracket_open" }, {Separators::square_bracket_close, "square_bracket_close" }, {Separators::semicolon, "semicolon" },
+	{Separators::colon, "colon"}
 };
