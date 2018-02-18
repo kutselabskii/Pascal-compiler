@@ -1,0 +1,38 @@
+digit
+	'0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+
+letter
+	'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z' |
+	'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l' | 'm' | 'n' | 'o' | 'p' | 'q' | 'r' | 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z'
+
+sign
+	'+' | '-'
+
+string_character
+	any_character_except_quote | '''
+
+unsigned_digit_sequence
+	digit {digit}
+
+digit_sequence
+	[sign] unsigned_digit_sequence
+
+scale_factor
+	('E' | 'e') digit_sequence
+
+integer_number
+	digit_sequence
+
+real_number
+	digit_sequence '.' [unsigned_digit_sequence] [scale_factor]   |   digit_sequence scale_factor
+
+number
+	integer_number | real_number
+
+string
+	''' string_character {string_character} '''
+
+
+
+
+
