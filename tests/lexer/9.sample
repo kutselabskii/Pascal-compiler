@@ -1,0 +1,5 @@
+Line Col  Type           Value                         Original                      
+1    13   Id             hello                         hello                         
+1    15   Operator       addition                      +                             
+1    18   Int            15                            15                            
+1    18   End of file    EOF                                                         

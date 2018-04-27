@@ -1,0 +1,10 @@
+Line Col  Type           Value                         Original                      
+1    4    Operator       bitwise_and                   and                           
+1    7    Operator       bitwise_or                    or                            
+1    15   Keyword        program                       program                       
+1    21   Keyword        begin                         begin                         
+1    25   Keyword        end                           end                           
+1    31   Id             hello                         hello                         
+1    39   String         world                         world                         
+1    49   String         program                       program                       
+1    49   End of file    EOF                                                         

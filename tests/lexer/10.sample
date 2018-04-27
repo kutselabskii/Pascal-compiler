@@ -1,0 +1,6 @@
+Line Col  Type           Value                         Original                      
+2    6    Id             hello                         hello                         
+2    12   Id             world                         world                         
+2    14   Operator       addition                      +                             
+2    16   Int            1                             1                             
+2    16   End of file    EOF                                                         

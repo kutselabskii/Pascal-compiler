@@ -1,0 +1,16 @@
+Line Col  Type           Value                         Original                      
+1    2    Operator       addition                      +                             
+1    4    Operator       substraction                  -                             
+1    6    Operator       multiplication                *                             
+1    8    Operator       division                      /                             
+1    11   Operator       bitwise_shift_to_the_left     <<                            
+1    14   Operator       bitwise_shift_to_the_right    >>                            
+1    16   Operator       equal                         =                             
+1    19   Operator       not_equal                     <>                            
+1    21   Operator       strictly_less_than            <                             
+1    23   Operator       strictly_greater_than         >                             
+1    25   Operator       strictly_less_than            <                             
+1    26   Operator       equal                         =                             
+1    28   Operator       strictly_greater_than         >                             
+1    29   Operator       equal                         =                             
+1    31   End of file    EOF                                                         

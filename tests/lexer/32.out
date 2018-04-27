@@ -1,0 +1,4 @@
+Line Col  Type           Value                         Original                      
+1    2    Separator      parenthesis_open              (                             
+1    9    String         hello                         hello                         
+1    9    End of file    EOF                                                         

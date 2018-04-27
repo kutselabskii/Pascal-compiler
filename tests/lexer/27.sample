@@ -1,0 +1,25 @@
+Line Col  Type           Value                         Original                      
+1    8    Keyword        program                       program                       
+1    12   Id             abc                           abc                           
+1    13   Separator      semicolon                     ;                             
+3    4    Keyword        var                           var                           
+3    6    Id             a                             a                             
+3    7    Separator      comma                         ,                             
+3    9    Id             b                             b                             
+3    10   Separator      comma                         ,                             
+3    12   Id             c                             c                             
+3    13   Separator      colon                         :                             
+3    21   Id             integer                       integer                       
+3    22   Separator      semicolon                     ;                             
+4    6    Keyword        begin                         begin                         
+6    2    Id             a                             a                             
+6    5    Operator       assignment                    :=                            
+6    7    Id             b                             b                             
+6    8    Separator      semicolon                     ;                             
+8    2    Id             c                             c                             
+8    5    Operator       assignment                    :=                            
+8    7    Id             a                             a                             
+8    8    Separator      semicolon                     ;                             
+9    4    Keyword        end                           end                           
+9    5    Operator       dot                           .                             
+9    5    End of file    EOF                                                         
