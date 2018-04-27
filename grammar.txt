@@ -1,0 +1,141 @@
+//														LOW LEVEL DEFINITIONS
+digit
+	'0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+
+letter
+	'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z' |
+	'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l' | 'm' | 'n' | 'o' | 'p' | 'q' | 'r' | 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z'
+
+sign
+	'+' | '-'
+
+string_character
+	any_character_except_quote | '''
+
+unsigned_digit_sequence
+	digit {digit}
+
+digit_sequence
+	[sign] unsigned_digit_sequence
+
+scale_factor
+	('E' | 'e') digit_sequence
+
+integer_number
+	digit_sequence
+
+real_number
+	digit_sequence '.' [unsigned_digit_sequence] [scale_factor]   |   digit_sequence scale_factor
+
+number
+	integer_number | real_number
+
+string
+	''' string_character {string_character} '''
+
+identifier
+	letter | '_' {letter | digit | '_'}
+
+constant
+	number | string | constant_identifier
+
+constant_identifier
+	identifier
+
+identifier_list
+	identifier {', identifier}
+	
+//																TYPES
+type
+	type_identifier
+
+
+//															EXPRESSIONS
+relational_operator
+	'=' | '<>' | '<' | '>' | '<=' | '>='
+
+addition_operator
+	'+' | '-' | 'or'
+
+multiplication_operator
+	'*' | '/' | 'div' | 'mod' | 'and'
+
+expression
+	simple_expressin {relational_operator simple_expression}
+
+simple_expression
+	term {addition_operator term}
+
+term
+	factor {multiplication_operator factor}
+
+factor
+	variable | number | string | constant_identifier | '(' expression ')' | 'not' factor | function_call
+
+function_call
+	function_identificator '(' actual_parameter_list ')'
+
+actual_parameter_list
+	actual_parameter {',' actual_parameter}
+
+actual_parameter
+	actual_value | actual_variable | actual_function
+
+
+//														PROGRAMS AND BLOCKS
+program
+	program_heading		block	 '.'
+
+program_heading
+	'program' identifier ';'
+
+block
+	declaration_part	statement_part
+
+//														DECLARATION PART
+declaration_part
+	[constant_definition_part] [type_definition_part] [variable_declaration_part] [procedure_and_function_declaration_part]
+
+constant_definition_part
+	const identifier '=' constant ';' {identifier '=' constant';'}
+
+variable_declaration_part
+	var identifier_list ':' type ';' {identifier_list ':' type ';'}
+
+type_definition_part
+	type identifier '=' type ';' {identifier '=' type ';'}
+
+//														STATEMENT PART
+statement_part
+	'begin' statement_sequence 'end'
+
+statement_sequence
+	statement {';' statement}
+
+statement
+	assignment_statement | procedure_statement | compound_statement | while_statement | repeat_statement | for_statement | write_statement | if_statement
+
+assignment_statement
+	variable ':=' expression
+
+procedure_statement
+	procedure_identifier '(' actual_parameter_list ')'
+
+compound_statement
+	'begin' statement_sequence 'end'
+
+while statement
+	'while' expression 'do' statement
+
+repeat_statement
+	'repeat' statement_sequence 'until' statement
+
+for_statement
+	'for' variable_identifier  ':=' expression ('to' | 'downto') expression 'do' statement
+
+if_statement
+	'if' expression 'then' statement ['else' statement]
+
+
+
+
