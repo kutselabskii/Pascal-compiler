@@ -1,0 +1,21 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : real
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- //Statement sequence
+                |__ //Statement sequence
+                    |-- //Assignment_statement
+                    |   |-- a
+                    |   |   |__  : real
+                    |   |__ //Typecast
+                    |       |--  : real
+                    |       |__ 5
+                    |__ //Assignment_statement
+                        |-- a
+                        |   |__  : real
+                        |__ 2.5

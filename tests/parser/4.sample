@@ -1,0 +1,15 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- const
+        |   |   |-- a
+        |   |   |   |__ 5
+        |   |   |__ b
+        |   |       |__ 4e+12
+        |   |   |__ c
+        |   |       |__ d
+        |   |   |__ d
+        |   |       |__ hello
+        |__ //Statement part
+            |__ //Statement sequence

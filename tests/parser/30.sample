@@ -1,0 +1,18 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : integer
+        |   |   |__ i
+        |   |       |__  : integer
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- if
+                |   |-- strictly_greater_than
+                |   |   |-- a
+                |   |   |   |__  : integer
+                |   |   |__ 0
+                |   |-- write
+                |   |   |__ 1

@@ -1,0 +1,7 @@
+program abc;
+
+var a, b, c: integer;
+
+begin
+end
+.

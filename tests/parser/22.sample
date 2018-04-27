@@ -1,0 +1,22 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : integer
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- while
+                |   |-- strictly_less_than
+                |   |   |-- a
+                |   |   |   |__  : integer
+                |   |   |__ 5
+                |   |__ //Statement sequence
+                |       |-- //Assignment_statement
+                |       |   |-- a
+                |       |   |   |__  : integer
+                |       |   |__ addition
+                |       |       |-- a
+                |       |       |   |__  : integer
+                |       |       |__ 1

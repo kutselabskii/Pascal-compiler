@@ -1,0 +1,24 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : integer
+        |   |   |__ i
+        |   |       |__  : integer
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- for
+                |   |-- i
+                |   |   |__  : integer
+                |   |-- 1
+                |   |-- 5
+                |   |__ //Assignment_statement
+                |       |-- a
+                |       |   |__  : integer
+                |       |__ addition
+                |           |-- a
+                |           |   |__  : integer
+                |           |__ i
+                |               |__  : integer

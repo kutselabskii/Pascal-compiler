@@ -1,0 +1,21 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : integer
+        |   |   |__ b
+        |   |       |__  : integer
+        |   |   |__ c
+        |   |       |__  : integer
+        |   |   |__ d
+        |   |       |__  : real
+        |   |   |__ e
+        |   |       |__  : real
+        |   |   |__ f
+        |   |       |__  : char
+        |   |   |__ g
+        |   |       |__  : string
+        |__ //Statement part
+            |__ //Statement sequence

@@ -1,0 +1,11 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__ mytype : integer
+        |   |-- type
+        |   |   |-- mytype : integer
+        |__ //Statement part
+            |__ //Statement sequence

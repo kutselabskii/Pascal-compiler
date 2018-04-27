@@ -1,0 +1,8 @@
+program abc;
+
+var a, i: integer;
+
+begin
+if (a > 0) then
+	write(1);
+end.

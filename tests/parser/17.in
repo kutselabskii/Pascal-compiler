@@ -1,0 +1,12 @@
+program abc;
+
+function abc():integer;
+begin
+
+end
+
+var a: integer;
+
+begin
+	a := abc();
+end.

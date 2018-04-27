@@ -1,0 +1,10 @@
+program abc;
+
+var a, b, c: integer;
+    d, e: real;
+    f: char;
+    g: string;
+begin
+end
+
+.

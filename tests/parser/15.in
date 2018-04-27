@@ -1,0 +1,14 @@
+program abc;
+
+function a(b:real; d: integer): integer;
+var c:integer;
+begin
+  b := d;
+  c := 12 mod 10 + 12 div 10;	
+end
+
+var hello: integer;
+
+begin
+hello := a(2.5, hello);
+end.

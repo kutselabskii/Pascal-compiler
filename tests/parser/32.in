@@ -1,0 +1,9 @@
+program abc;
+
+var a: real;
+
+begin
+if (a > 0) then
+	while (a > 0) do
+		a := a / 2;
+end.

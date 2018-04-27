@@ -1,0 +1,8 @@
+program ABC;
+const a = 5;
+      b = 4.e12;
+      c = #100;
+      d = 'hello';
+begin
+end
+.

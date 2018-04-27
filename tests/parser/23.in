@@ -1,0 +1,10 @@
+program abc;
+
+var a: integer;
+
+begin
+	while (a < 5) 
+	begin
+		a := a + 1;
+	end;
+end.

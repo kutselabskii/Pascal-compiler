@@ -1,0 +1,6 @@
+program abc;
+
+var hello:integer;
+
+begin
+end.

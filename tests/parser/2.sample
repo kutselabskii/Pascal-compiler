@@ -1,0 +1,6 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |__ //Statement part
+            |__ //Statement sequence

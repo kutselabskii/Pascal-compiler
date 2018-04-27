@@ -1,0 +1,20 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- a	//Procedure_declaration
+        |   |   |-- //Arguments list
+        |   |   |   |-- a
+        |   |   |   |   |__  : integer
+        |   |   |__ //Block
+        |   |       |-- //Declaration part
+        |   |       |__ //Statement part
+        |   |           |__ //Statement sequence
+        |   |               |-- //Assignment_statement
+        |   |               |   |-- a
+        |   |               |   |   |__  : integer
+        |   |               |   |__ 5
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- a//Procedure statement
+                |   |-- 2

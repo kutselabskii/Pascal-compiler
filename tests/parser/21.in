@@ -1,0 +1,9 @@
+program abc;
+
+var a: real;
+begin
+	begin
+		a := 5;
+		a := 2.5;
+
+end.

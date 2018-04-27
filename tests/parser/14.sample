@@ -1,0 +1,31 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- a	//Function_declaration
+        |   |   |--  : string
+        |   |   |-- //Arguments list
+        |   |   |   |-- b
+        |   |   |   |   |__  : real
+        |   |   |   |__ d
+        |   |   |       |__  : integer
+        |   |   |__ //Block
+        |   |       |-- //Declaration part
+        |   |       |   |-- var
+        |   |       |   |   |-- c
+        |   |       |   |   |   |__  : integer
+        |   |       |__ //Statement part
+        |   |           |__ //Statement sequence
+        |   |               |-- //Assignment_statement
+        |   |               |   |-- b
+        |   |               |   |   |__  : real
+        |   |               |   |__ //Typecast
+        |   |               |       |--  : real
+        |   |               |       |__ d
+        |   |               |           |__  : integer
+        |   |               |__ //Assignment_statement
+        |   |                   |-- c
+        |   |                   |   |__  : integer
+        |   |                   |__ 3
+        |__ //Statement part
+            |__ //Statement sequence

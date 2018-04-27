@@ -1,0 +1,21 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : integer
+        |   |-- abc	//Function_declaration
+        |   |   |--  : integer
+        |   |   |-- //Arguments list
+        |   |   |__ //Block
+        |   |       |-- //Declaration part
+        |   |       |__ //Statement part
+        |   |           |__ //Statement sequence
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- //Assignment_statement
+                |   |-- a
+                |   |   |__  : integer
+                |   |__ abc//Function call
+                |       |--  : integer

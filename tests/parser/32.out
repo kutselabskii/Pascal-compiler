@@ -1,0 +1,32 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : real
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- if
+                |   |-- strictly_greater_than
+                |   |   |-- a
+                |   |   |   |__  : real
+                |   |   |__ //Typecast
+                |   |       |--  : real
+                |   |       |__ 0
+                |   |-- while
+                |   |   |-- strictly_greater_than
+                |   |   |   |-- a
+                |   |   |   |   |__  : real
+                |   |   |   |__ //Typecast
+                |   |   |       |--  : real
+                |   |   |       |__ 0
+                |   |   |__ //Assignment_statement
+                |   |       |-- a
+                |   |       |   |__  : real
+                |   |       |__ division
+                |   |           |-- a
+                |   |           |   |__  : real
+                |   |           |__ //Typecast
+                |   |               |--  : real
+                |   |               |__ 2

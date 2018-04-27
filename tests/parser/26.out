@@ -1,0 +1,36 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- var
+        |   |   |-- a
+        |   |   |   |__  : integer
+        |   |   |__ i
+        |   |       |__  : integer
+        |__ //Statement part
+            |__ //Statement sequence
+                |-- for
+                |   |-- i
+                |   |   |__  : integer
+                |   |-- 1
+                |   |-- 5
+                |   |__ while
+                |       |-- strictly_greater_than
+                |       |   |-- a
+                |       |   |   |__  : integer
+                |       |   |__ 0
+                |       |__ //Assignment_statement
+                |           |-- a
+                |           |   |__  : integer
+                |           |__ substraction
+                |               |-- a
+                |               |   |__  : integer
+                |               |__ 1
+                |__ //Assignment_statement
+                    |-- a
+                    |   |__  : integer
+                    |__ addition
+                        |-- a
+                        |   |__  : integer
+                        |__ i
+                            |__  : integer

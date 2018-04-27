@@ -1,0 +1,8 @@
+program abc;
+
+var a, i: integer;
+
+begin
+for i := 1 downto 5 do
+	a := a + i;
+end.

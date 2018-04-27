@@ -1,0 +1,11 @@
+program abc;
+
+var a: integer;
+
+begin
+repeat
+	a := a + 1;
+	a := a + 2;
+	a := 14 mod 7;
+until (a > 0);
+end.
