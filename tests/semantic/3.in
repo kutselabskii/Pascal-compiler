@@ -1,0 +1,8 @@
+program abc;
+
+type a = integer;
+
+var a: integer;
+
+begin end
+.

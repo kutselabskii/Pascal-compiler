@@ -1,0 +1,9 @@
+|__ program
+    |-- abc //Program_heading
+    |__ //Block
+        |-- //Declaration part
+        |   |-- const
+        |   |   |-- a
+        |   |   |   |__ 4
+        |__ //Statement part
+            |__ //Statement sequence

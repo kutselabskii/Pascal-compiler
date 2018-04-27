@@ -1,0 +1,8 @@
+program abc;
+
+var a, i: real;
+
+begin
+if (a) then
+	a := 5;
+end.

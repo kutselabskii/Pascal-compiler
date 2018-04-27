@@ -1,0 +1,9 @@
+program abc;
+
+const b = 2;
+      c = 10;
+var a: real;
+
+begin
+a := b * c mod (c * c);
+end.

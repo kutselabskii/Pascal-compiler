@@ -1,0 +1,10 @@
+program abc;
+
+var a: real;
+
+begin
+	while (a < 5) do
+	begin
+		a := a + 1;
+	end;
+end.

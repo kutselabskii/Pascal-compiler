@@ -1,0 +1,7 @@
+program abc;
+
+var a, b: integer;
+    c, a: real;
+
+begin end
+.

@@ -1,0 +1,8 @@
+program abc;
+
+const a = 5;
+      b = 1;
+      a = 3;
+
+begin end
+.

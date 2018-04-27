@@ -1,0 +1,6 @@
+program abc;
+
+const a = 1 + 1;
+
+begin
+end.

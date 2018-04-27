@@ -1,0 +1,8 @@
+program abc;
+
+const b = 2;
+var a: real;
+
+begin
+a := b * 8;
+end.

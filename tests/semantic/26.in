@@ -1,0 +1,7 @@
+program abc;
+
+var a, i: integer;
+
+begin
+write(a + ' ');
+end.

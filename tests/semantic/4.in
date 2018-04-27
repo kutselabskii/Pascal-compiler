@@ -1,0 +1,8 @@
+program abc;
+
+const b = 5;
+
+var c: b;
+
+begin end
+.

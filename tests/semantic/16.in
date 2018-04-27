@@ -1,0 +1,7 @@
+program abc;
+
+var a: real;
+
+begin
+a := 5 mod (6 + 3 * 4 / 3.5) div 7;
+end.

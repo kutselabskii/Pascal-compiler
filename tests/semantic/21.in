@@ -1,0 +1,10 @@
+program abc;
+
+procedure a(a:integer);
+begin
+	a := 5;
+end
+
+begin
+	a(3.5);
+end.

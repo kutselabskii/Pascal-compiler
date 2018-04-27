@@ -1,0 +1,6 @@
+program abc;
+
+const a = 'hello' + ' world!';
+
+begin
+end.
