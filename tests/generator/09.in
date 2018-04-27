@@ -1,0 +1,9 @@
+program abc;
+
+var a, b: integer;
+begin
+	a := 12;
+	b := 4;
+	write(a div b);
+	write(a mod b);
+end.

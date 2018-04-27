@@ -1,0 +1,10 @@
+|__ equal
+    |-- bitwise_negation
+    |   |-- addition
+    |   |   |-- bitwise_negation
+    |   |   |   |-- bitwise_negation
+    |   |   |   |   |-- 1
+    |   |   |__ 2
+    |__ bitwise_and
+        |-- 2
+        |__ 3

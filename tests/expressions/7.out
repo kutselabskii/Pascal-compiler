@@ -1,0 +1,11 @@
+|__ remainder
+    |-- addition
+    |   |-- multiplication
+    |   |   |-- 15
+    |   |   |__ addition
+    |   |       |-- 25
+    |   |       |__ integer_division
+    |   |           |-- 11
+    |   |           |__ 8
+    |   |__ 4
+    |__ 6

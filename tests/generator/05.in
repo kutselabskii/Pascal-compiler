@@ -1,0 +1,8 @@
+program abc;
+
+var a, b: integer;
+begin
+	a := 3;
+	b := 2;
+	write(a + b);
+end.
